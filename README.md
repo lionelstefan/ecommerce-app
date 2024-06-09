@@ -62,4 +62,40 @@ Another url you need to access manually is for product creation:
 I believe for other routes, you can find it using the interface.
 
 ## API Endpoints
-TBC
+<details>
+ <summary><code>POST</code> <code><b>/api/carts/add</b></code> </summary>
+
+##### Parameters
+
+> | name              |  type     | data type      | description                         |
+> |-------------------|-----------|----------------|-------------------------------------|
+> | `product`         |  required | Object         | Product to be add to cart           |
+
+##### Responses
+
+> | http code     | content-type                      | response                                                            |
+> |---------------|-----------------------------------|---------------------------------------------------------------------|
+> | `200`         | `application/json`                | `{"success": true}`                                                 |                  
+
+
+</details>
+
+<details>
+ <summary><code>POST</code> <code><b>/api/carts/remove</b></code> </summary>
+
+##### Parameters
+
+> | name              |  type     | data type      | description                         |
+> |-------------------|-----------|----------------|-------------------------------------|
+> | `productId`       |  required | int            | Product id to be remove from cart   |
+
+##### Responses
+
+> | http code     | content-type                      | response                                                            |
+> |---------------|-----------------------------------|---------------------------------------------------------------------|
+> | `200`         | `application/json`                | `{"success": true}`                                                 |                  
+
+
+</details>
+
+## That's all. Wish me luck !
